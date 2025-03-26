@@ -48,10 +48,36 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="assets/hero-illustration.svg" alt="AI Tools Illustration" class="float-animation">
+        <img src="https://iili.io/3Tky9uj.md.png" alt="AI Robot" class="floating-robot">
       </div>
     </div>
   </section>
+  
+  <style>
+    .floating-robot {
+      animation: float 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: center;
+      will-change: transform;
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+        animation-timing-function: ease-out;
+      }
+      25% {
+        transform: translateY(-10px) scale(1.02);
+        animation-timing-function: ease-in;
+      }
+      50% {
+        transform: translateY(-20px) scale(1.03);
+      }
+      75% {
+        transform: translateY(-10px) scale(1.02);
+        animation-timing-function: ease-out;
+      }
+    }
+  </style>
 
   <!-- Stats Counter -->
   <section class="stats">
